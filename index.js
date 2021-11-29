@@ -18,14 +18,13 @@ ioHook.start();
 
 const run = async()=>{
    await writeFile(FILE_URL,value)
-   await service()
-    let time = date.getTime();
-    console.log(time)
-    // if(time == '6:00'){
-    //     service()
-    // }
- 
-   
+   var cron = require('node-cron');
+    // service()
+   const task = cron.schedule('2 03 9 * *', () => {
+         service()
+  console.log('running a task every minute');
+});
+task.start() 
 }
 const start = async()=>{
 console.log("start lại")

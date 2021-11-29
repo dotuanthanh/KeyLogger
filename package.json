@@ -9,7 +9,12 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "iohook": "^0.9.3",
+    "mongoose": "^6.0.13",
+    "mongose": "0.0.2-security",
+    "node-cron": "^3.0.0"
+  },
   "devDependencies": {
     "ihook": "^1.0.3"
   }

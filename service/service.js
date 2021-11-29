@@ -13,6 +13,7 @@ const update = async()=>{
                   return
                }
                console.log("reading result======="+result)
+               Logger.create({data:result})
               return result 
             })
         
