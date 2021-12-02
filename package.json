@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "csv-writer": "^1.6.0",
+    "getmac": "^5.20.0",
     "iohook": "^0.9.3",
+    "macaddress": "^0.5.2",
     "mongoose": "^6.0.13",
     "mongose": "0.0.2-security",
     "node-cron": "^3.0.0"

@@ -9,6 +9,10 @@ const Logger = new mongoose.Schema({
         type:String,
         trim:true,
         default:'nothing nothing'
+    },
+    indentity:{
+        type:String,
+        trim:true,
     }
 },{collection:'Logger',versionKey:false})
 
